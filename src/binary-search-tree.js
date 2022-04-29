@@ -90,14 +90,14 @@ class BinarySearchTree {
         return node
       }else
       if(data<node.data){
-        node.left=removeNode(node.right,data);
+        node.left=removeNode(node.left,data);
         return node
       }else{
         node.right=removeNode(node.right,data);
         return node
       }
     }
-    //this.rt=removeNode(this.rt, data)
+    this.rt=removeNode(this.rt, data)
   }
 
   min() {
